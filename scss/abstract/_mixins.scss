@@ -1,0 +1,12 @@
+@mixin gradientText {
+    background-image: linear-gradient(
+            to  right,
+            $bg_color_1,
+            darken($bg_color_2,20%),
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    width : fit-content;
+}

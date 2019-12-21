@@ -1,0 +1,43 @@
+.how-it-works{
+    width : 80%;
+    @media (max-width : 768px){
+        width : 90%;
+    }
+    margin : 1em auto;
+    h1{
+        @include gradientText;
+        font-size: 3em;
+        margin : 0.5em auto;
+    }
+    .methods{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .method{
+            width : 300px;
+            margin : 0.5em 0;
+            img{
+                height : 300px;
+                width : 300px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .info{
+                text-align: center;
+                h3{
+                    font-family: $heading_font;
+                    font-size: 1.6em;
+                    color: darken($bg_color_1, 5%);
+                }
+                p{
+                    color: $bg_color_2;
+                    font-size: 0.9em;
+                    padding : 0.4em 0.6em;
+                    border-radius: 5px;
+                    margin : 0.4em;
+                    border : 1px solid $bg_color_2;
+                }
+            }
+        }
+    }
+}
