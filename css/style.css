@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Lobster&display=swap");
+.btn {
+  background-color: #752f7d;
+  padding: 0.4em 0.8em;
+  font-weight: bold;
+  border-radius: 3px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body h1, body h2 {
+  font-family: "Lobster", cursive; }
+
+body p {
+  font-family: "Barlow", sans-serif; }
+
+header {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 1024px) {
+    header {
+      height: 60vh; } }
+  @media (max-width: 420px) {
+    header {
+      height: 90vh; } }
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em; }
+    header nav .brand {
+      width: 40%; }
+      header nav .brand h1 a {
+        text-decoration: none;
+        color: white; }
+    header nav .menu {
+      width: 50%; }
+      @media (max-width: 768px) {
+        header nav .menu {
+          display: none; } }
+      header nav .menu ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        header nav .menu ul li {
+          margin: 0 1em;
+          padding: 0.4em 0.8em;
+          border: 2px solid transparent;
+          border-radius: 3px;
+          transition: all 0.3s; }
+          header nav .menu ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: "Barlow", sans-serif; }
+          header nav .menu ul li:hover {
+            border: 2px solid white; }
+  header .hero-area {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%); }
+    header .hero-area h1 {
+      font-size: 3em;
+      color: white; }
+    header .hero-area p {
+      font-size: 1.2em;
+      color: #cccccc;
+      margin: 0.3em 0; }
+    header .hero-area .link-btn {
+      padding: 1em 2em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: "Barlow", sans-serif;
+      color: #B354BE;
+      background-color: white;
+      margin-top: 0.8em; }
