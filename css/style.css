@@ -74,10 +74,16 @@ header {
     header .hero-area h1 {
       font-size: 3em;
       color: white; }
+      @media (max-width: 420px) {
+        header .hero-area h1 {
+          font-size: 2.5em; } }
     header .hero-area p {
       font-size: 1.2em;
       color: #cccccc;
       margin: 0.3em 0; }
+      @media (max-width: 420px) {
+        header .hero-area p {
+          font-size: 1em; } }
     header .hero-area .link-btn {
       padding: 1em 2em;
       border-radius: 4px;
@@ -89,18 +95,15 @@ header {
       margin-top: 0.8em; }
 
 .how-it-works {
-  width: 80%;
-  margin: 1em auto; }
-  @media (max-width: 768px) {
-    .how-it-works {
-      width: 90%; } }
+  width: 100%;
+  padding: 1em 0;
+  margin: 1em 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   .how-it-works h1 {
-    background-image: linear-gradient(to right, #4D40B8, #752f7d);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    color: transparent;
-    width: fit-content;
+    color: white;
+    text-align: center;
     font-size: 3em;
     margin: 0.5em auto; }
   .how-it-works .methods {
@@ -109,10 +112,13 @@ header {
     justify-content: space-evenly; }
     .how-it-works .methods .method {
       width: 300px;
-      margin: 0.5em 0; }
+      margin: 0.5em 0;
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
       .how-it-works .methods .method img {
-        height: 300px;
-        width: 300px;
+        height: 100px;
+        width: 100px;
         object-fit: cover;
         border-radius: 50%; }
       .how-it-works .methods .method .info {
@@ -120,11 +126,12 @@ header {
         .how-it-works .methods .method .info h3 {
           font-family: "Lobster", cursive;
           font-size: 1.6em;
-          color: #4539a5; }
+          color: white;
+          font-weight: 200; }
         .how-it-works .methods .method .info p {
-          color: #B354BE;
+          color: white;
           font-size: 0.9em;
           padding: 0.4em 0.6em;
           border-radius: 5px;
           margin: 0.4em;
-          border: 1px solid #B354BE; }
+          border: 1px solid white; }
